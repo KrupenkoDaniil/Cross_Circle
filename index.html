@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross/Circle</title>
+    <link rel="icon" href="./static/img/biscuit.png">
+    <link rel="stylesheet" href="./static/scss/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <ul class="main-slider">
+                <li class="main-slider__item">
+                    <h1 href="#">Statistics</h1>
+                </li>
+                <li class="main-slider__item main-slider__item_active">
+                    <h1 href="#">Cross/Circle</h1>
+                </li>
+                <li class="main-slider__item">
+                    <h1 href="#">Skins</h1>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="section">
+        <div class="container">
+            <div class="game-section">
+                <div class="statistics game-section__statistics">
+                    <div class="statistics__player-stats">
+                        <h2 class="statistics__wins">wins: 100</h2>
+                        <h2 class="statistics__loses">loses: 100</h2>
+                        <h2 class="statistics__ties">ties: 100</h2>
+                    </div>
+                    <h1 class="statistics__label">Current rating</h1>
+                    <ul class="current-rating">
+                        <li class="rating-member">
+                            <span class="rating-member__member-pos">
+                                <img src="./static/img/first.png" alt="1">
+                            </span>
+                            <a href="#">
+                                <span
+                                    class="rating-member__member-name rating-member__member-name_first">player_1</span>
+                            </a>
+                            <ul class="rating-member__member-stats">
+                                <li class="rating-member__wins">wins: 1000</li>
+                                <li class="rating-member__loses">loses: 999</li>
+                                <li class="rating-member__ties">ties: 998</li>
+                            </ul>
+                        </li>
+
+                        <li class="rating-member">
+                            <span class="rating-member__member-pos">
+                                <img src="./static/img/second.png" alt="2">
+                            </span>
+                            <a href="#">
+                                <span
+                                    class="rating-member__member-name rating-member__member-name_second">player_2</span>
+                            </a>
+                            <ul class="rating-member__member-stats">
+                                <li class="rating-member__wins">wins: 500</li>
+                                <li class="rating-member__loses">loses: 467</li>
+                                <li class="rating-member__ties">ties: 777</li>
+                            </ul>
+                        </li>
+
+                        <li class="rating-member">
+                            <span class="rating-member__member-pos">
+                                <img src="../static/img/third.png" alt="2">
+                            </span>
+                            <a href="#">
+                                <span
+                                    class="rating-member__member-name rating-member__member-name_third">player_3</span>
+                            </a>
+                            <ul class="rating-member__member-stats">
+                                <li class="rating-member__wins">wins: 300</li>
+                                <li class="rating-member__loses">loses: 297</li>
+                                <li class="rating-member__ties">ties: 404</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="game-section__game-board">
+                    <div class="game-section__current-figure">
+                        <h2>Current figure:</h2>
+                        <img src="./static/img/cross.png" alt="">
+                    </div>
+                    <div class="game-field game-section__game-field">
+                        <div class="game-field__result-label">
+                            <img src="#" alt="winner">
+                            <h2>Won!</h2>
+                        </div>
+                    </div>
+                    <div class="game-section__restart-btn">
+                        <a href="#">Restart</a>
+                    </div>
+                </div>
+                <div class="game-section__skins-area">
+                    <ul class="game-section__skins">
+                        <li class="game-section__skins-title">Cross</li>
+                        <li class="game-section__skin">
+                            <img class="game-section__skin_active" src="../static/img/cross.png" alt="" id="cross">
+                        </li>
+                        <li class="game-section__skin">
+                            <img src="./static/img/crab.png" alt="">
+                        </li>
+                        <li class="game-section__skin">
+                            <img src="./static/img/spectacles.png" alt="">
+                        </li>
+                        <li class="game-section__skin">
+                            <img src="./static/img/cookie.png" alt="">
+                        </li>
+                        <li class="game-section__skin">
+                            <img src="./static/img/person1.png" alt="">
+                        </li>
+                    </ul>
+                    <ul class="game-section__skins">
+                        <li class="game-section__skins-title">Circle</li>
+                        <li class="game-section__skin">
+                            <img class="game-section__skin_active" src="../static/img/circle.png" alt="" id="circle">
+                        </li>
+                        <li class="game-section__skin">
+                            <img src="./static/img/watermelon.png" alt="">
+                        </li>
+                        <li class="game-section__skin">
+                            <img src="./static/img/sunglasses.png" alt="">
+                        </li>
+                        <li class="game-section__skin">
+                            <img src="./static/img/biscuit.png" alt="">
+                        </li>
+                        <li class="game-section__skin">
+                            <img src="./static/img/person2.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
