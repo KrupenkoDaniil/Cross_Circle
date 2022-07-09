@@ -1,0 +1,244 @@
+@import "./reset.scss";
+
+$h1_fz: 50px;
+$h2_fz: 20px;
+
+body {
+    background-color: #242635;
+    height: 100vh;
+}
+
+* {
+    color: #fff;
+    // border: 1px solid wheat;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header {
+    border-bottom: 2px solid #1F1E2C;
+}
+
+.container {
+    display: block;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.main-slider {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+		&__item {
+            width: 30%;
+            text-align: center;
+
+            h1 {
+                font-size: $h1_fz;
+                font-weight: 500;
+                padding: 3% 9%;
+                border-radius: 20px;
+                transition: all .3s linear;
+            }
+		}
+}
+
+.section {
+    border-bottom: 2px solid #1F1E2C;
+}
+
+.game-section {
+    display: flex;
+    justify-content: center;
+		&__statistics,
+        &__game-board,
+        &__skins-area  {
+            width: 33.333%;
+            border-right: 2px solid #1F1E2C;
+		}
+
+        &__skins-area {
+            border: 0;
+        }
+
+        &__game-board {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__game-field {
+            margin-bottom: 20px;
+        }
+
+        &__current-figure {
+            width: 50%;
+            height: 50px;
+            font-size: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+        &__current-figure img{
+            width: 20%;
+            margin-left: 20px;
+        }
+    
+        &__restart-btn {
+            margin-bottom: 20px;
+        }
+    
+        &__restart-btn a {
+            font-size: $h2_fz;
+            padding: 20px 30px;
+            background-color: #0177FB;
+            border-radius: 5%;
+        }
+
+        &__skins-area {
+            display: flex;
+            justify-content: center;
+            font-size: 35px;
+        }
+
+        &__skins {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            text-align: center;
+            margin: 0 30px;
+        }
+
+        &__skins-title,
+        &__skin {
+            margin-bottom: 20px;
+        }
+
+        &__skin_active{
+            background-color: wheat;
+            border-radius: 5px;
+            transition: background-color .2s linear;
+        }
+
+        &__skin img{
+            width: 50%;
+            margin: 0 auto;
+        }
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+		&__player-stats {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+            font-size: $h2_fz;
+            text-transform: uppercase;
+            margin: 20px 0; //
+		}
+
+		&__wins,
+        &__loses,
+        &__ties {
+            width: 50%;
+            margin-bottom: 20px;//
+		}
+}
+
+.current-rating {
+    width: 100%;
+}
+.rating-member {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: $h2_fz;
+    margin-bottom: 20px;
+		&__member-pos {
+            width: 15%;
+             img {
+                width: 50%;
+             }
+		}
+
+		&__member-name {
+            width: 30%;
+            color: #fff;
+            &_first {
+                color: gold;
+            }
+            &_second {
+                color: blue;
+            }
+            &_third {
+                color: silver;
+            }
+        }
+}
+
+.game-field {
+    position: relative;
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .game-field__game-square {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33.333%;
+        height: 33.333%;
+        background-color: wheat;
+        border: 1px solid black;
+
+        img {
+            width: 50%;
+        }
+    }
+
+    .game-field__result-label {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        text-transform: uppercase;
+        font-size: $h2_fz;
+        width: 50%;
+        height: 20%;
+        background-color: #242635;
+        border-radius: 10px;
+    }
+
+    .game-field__result-label.active {
+        display: flex;
+    }
+
+    .game-field__result-label img {
+        width: 25%;
+        margin-right: 20px;
+    }
+}
+
+
+
+
